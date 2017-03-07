@@ -1,0 +1,10 @@
+.outer {
+  width: 500px;
+  height: 500px; }
+  .outer .inner {
+    width: 400px;
+    height: 200px; }
+    .outer .inner p {
+      color: red; }
+
+/*# sourceMappingURL=style.css.map */

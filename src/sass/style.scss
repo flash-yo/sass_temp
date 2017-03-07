@@ -1,0 +1,14 @@
+.outer{
+  width: 500px;
+  height: 500px;
+
+
+  .inner {
+    width: 400px;
+    height: 200px;
+
+    p {
+      color: red;
+    }
+  }
+}
