@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* margin padding reset */
+body, div, p, em, ul, ol, li, a ,dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select {
+  margin: 0;
+  padding: 0;
+}
+
+em { font-style: normal; }
+
+iframe { border: none; }
+
+/* remove list point mark */
+ul,
+ol		{ list-style: none; }
+
+/* remove border & off descender */
+img		{ border: 0; vertical-align: middle; }
+
+/* anchor */
+a { text-decoration: none; }
+a:hover { opacity: .7}
+a:link{color:#000000;}
+a:visited{color:#000000;}
+a:active{color:#000000;}
+/* remove descender */
+svg,
+input,
+select,
+textarea,
+label	{ vertical-align: middle; }
+
+/* set collapse */
+table	{ border-collapse: collapse; }
+
+/* off bold */
+h1, h2, h3 ,h4 ,h5, h6, th, em, strong { font-weight: normal; }
+
+/* break word for all elements */
+*,
+*:before,
+*:after {
+  word-break: break-all;
+}
+pre	 {
+  white-space: pre-wrap;
+}
+
+/* [IE8-] New Tag from HTML5 */
+main, article, aside, figcaption, figure,
+footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* for height 100% */
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* [if it need] remove default form style */
+select,
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+em {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+iframe {
+  border: none;
+}
+input[type="submit"],
+input[type="button"] {
+
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
