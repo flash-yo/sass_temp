@@ -14,7 +14,7 @@ gulp.task('sass', function(){
 
 // watchタスク(**/*.scss変更時に実行するタスク)
 gulp.task('sass-watch', ['scss-lint','sass'], function(){
-	var watcher = gulp.watch('src/sass/**/*.scss', ['sass']);
+	var watcher = gulp.watch('src/sass/**/*.scss', ['scss-lint','sass']);
 	watcher.on('change', function(event) {
 		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 	});
